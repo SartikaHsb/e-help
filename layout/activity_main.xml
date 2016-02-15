@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:orientation="horizontal" 
+        
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="110dp"
+            android:text="E-Help"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textColor="#FFFFFF" 
+            android:textSize="25dp"
+            />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="italic|bold" 
+            android:onClick="onClick"
+            android:layout_marginLeft="25dp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlNotif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:onClick="onClick" >
+
+        <ImageButton
+            android:id="@+id/notif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#80ffffff"
+            android:paddingBottom="3dp"
+            android:src="@drawable/lonceng"
+             />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/angka2" -->
+        <!-- android:layout_width="30dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout_alignRight="@+id/notif" -->
+        <!-- android:layout_marginRight="15dp" -->
+        <!-- android:layout_weight="2" -->
+        <!-- android:src="@drawable/lila" /> -->
+
+        <TextView
+            android:id="@+id/jumlah2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/notif"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/red"
+            android:text="1"
+            android:textAlignment="inherit"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rs2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <ImageButton
+            android:id="@+id/contact"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="3dp"
+            android:background="#80ffffff"
+            android:src="@drawable/phonecall_a" />
+
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="#80ffffff"
+            android:onClick="onClick"
+            android:src="@drawable/helpicon_a" />
+
+        <ImageButton
+            android:id="@+id/rotate"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="#80ffffff"
+            android:src="@drawable/pemkeb_a" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rs3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/rotate2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#80ffffff"
+            android:src="@drawable/peta" />
+    </LinearLayout>
+
+</LinearLayout>

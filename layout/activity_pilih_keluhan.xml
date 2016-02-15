@@ -1,0 +1,394 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".PilihKeluhan" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ADEF"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="14dp"
+                android:text="DATA KELUHAN"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="#FFFFFF" 
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            style="@style/scrollbar_bitmap_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="10" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/navyblue"
+                        android:padding="10dp"
+                        android:text="ISI KELUHAN"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.41"
+                            android:text="KELUHAN"
+                            android:textColor="@color/blue" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:text=":"
+                            android:textColor="@color/blue" />
+
+                        <ImageButton
+                            android:id="@+id/btnAddKeluhan"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="120dp"
+                            android:background="#80ffffff"
+                            android:src="@drawable/add_new" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="227dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvKel1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:textColor="@color/blue"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvKel2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                           android:textColor="@color/blue"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvKel3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:textColor="@color/blue"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvKelLain"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="KELUHAN LAIN"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text=":"
+                        android:textColor="@color/blue" />
+
+                    <EditText
+                        android:id="@+id/etKelLain"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tvFotoKejadian"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/navyblue"
+                                android:padding="10dp"
+                                android:text="FOTO KEJADIAN"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left" >
+
+                            <ImageView
+                                android:id="@+id/foto_kejadian1"
+                                android:layout_width="match_parent"
+                                android:layout_height="105dp"
+                                android:background="@drawable/layout_border"
+                                android:paddingBottom="1dp"
+                                android:paddingTop="1dp" />
+
+                            <Button
+                                android:id="@+id/btn_foto_rumah1"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="105dp"
+                                android:background="@android:color/transparent"
+                                android:onClick="onClick" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" >
+
+                            <ImageView
+                                android:id="@+id/foto_kejadian2"
+                                android:layout_width="match_parent"
+                                android:layout_height="105dp"
+                                android:background="@drawable/layout_border"
+                                android:paddingBottom="1dp"
+                                android:paddingTop="1dp" />
+
+                            <Button
+                                android:id="@+id/btn_foto_rumah2"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="105dp"
+                                android:background="@android:color/transparent"
+                                android:onClick="onClick" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left" >
+
+                            <ImageView
+                                android:id="@+id/foto_kejadian3"
+                                android:layout_width="match_parent"
+                                android:layout_height="105dp"
+                                android:background="@drawable/layout_border"
+                                android:paddingBottom="1dp"
+                                android:paddingTop="1dp" />
+
+                            <Button
+                                android:id="@+id/btn_foto_keluhan3"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="105dp"
+                                android:background="@android:color/transparent"
+                                android:onClick="onClick" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" >
+
+                            <ImageView
+                                android:id="@+id/foto_kejadian4"
+                                android:layout_width="match_parent"
+                                android:layout_height="105dp"
+                                android:background="@drawable/layout_border"
+                                android:paddingBottom="1dp"
+                                android:paddingTop="1dp" />
+
+                            <Button
+                                android:id="@+id/btn_foto_keluhan4"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="105dp"
+                                android:background="@android:color/transparent"
+                                android:onClick="onClick" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" 
+                    android:layout_marginTop="7dp"
+                     android:layout_marginBottom="3dp">
+
+                   
+                      
+                             <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/navyblue"
+                                android:padding="10dp"
+                                android:text="RUMAH SAKIT"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                       
+                        <TextView
+                           android:id="@+id/viewNamaRS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000" 
+                                android:padding="5dp"
+                                android:visibility="gone"/>
+                        <TextView
+                           android:id="@+id/viewAlamatRS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/blue" 
+                                android:padding="5dp"
+                                android:visibility="gone"/>
+                        <TextView
+                           android:id="@+id/viewJarakRS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/blue" 
+                                android:padding="5dp"
+                                android:visibility="gone"/>
+                   
+                        <Button
+                            android:id="@+id/btn_pilih"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/button"
+                            android:onClick="onClick" 
+                            android:padding="3dp"
+                            android:text="Pilih Rumah Sakit"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"/>
+                         </LinearLayout>
+         
+            </LinearLayout>
+        </ScrollView>
+    
+
+    <LinearLayout
+        android:id="@+id/button_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="0.5"
+        android:background="@drawable/button"
+        android:onClick="onClick" >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/centang" />
+
+        <TextView
+            android:id="@+id/simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:text="SIMPAN"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

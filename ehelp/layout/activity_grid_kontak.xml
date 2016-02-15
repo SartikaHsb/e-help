@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".Grid" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_uploadkunjungan"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:layout_height="35dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <SearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </SearchView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:paddingLeft="45dp"
+            android:visibility="invisible" >
+        </ListView>
+        <Button 
+            android:layout_marginRight="10dp"
+            android:id="@+id/orngLain"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button"
+            android:text="Orang lain"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:onClick="onClick"/>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            style="@style/scrollbar_bitmap_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="9"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/gridViewKeluh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="80dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth" 
+                    >
+                </GridView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
